@@ -195,6 +195,7 @@ VARIABLES = {
     "OIDC_UPDATE_USER_ROLE": Option(typ=bool, default=True),
     "OIDC_TOKEN_SIGNED_ALGORITHM": Option(),
     "OIDC_X_FORWARDED_HEADERS": Option(typ=str, parser=parse_x_forwarded_headers),
+    "OIDC_DISABLE_REQUEST_OBJECT": Option(typ=bool, default=False),
     # Logging
     "ECS_LOG_ENABLED": Option(typ=bool, default=False),
     "ECS_LOG_CONSOLE": Option(typ=bool, default=True),
