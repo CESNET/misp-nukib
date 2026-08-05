@@ -230,6 +230,7 @@ VARIABLES = {
     "SMTP_PORT": Option(typ=int, default=25, validation=check_uint),
     "SMTP_USERNAME": Option(),
     "SMTP_PASSWORD": Option(sensitive=True),
+    "SMTP_USE_TLS": Option(typ=bool, default=True),
     "SUPPORT_EMAIL": Option(validation=check_is_email),
     # MISP
     "MISP_BASEURL": Option(required=True, validation=check_is_url),

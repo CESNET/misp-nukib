@@ -11,7 +11,7 @@ class EmailConfig
         'password' => {{ SMTP_PASSWORD | str }},
         'client' => null,
         'log' => false,
-        'tls' => true,
+        'tls' => {{ SMTP_USE_TLS | bool }},
         'context' => ['ssl' => ['cafile' => '/etc/pki/ca-trust/extracted/pem/tls-ca-bundle.pem']],
     ];
 }

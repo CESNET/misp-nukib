@@ -121,10 +121,11 @@ By default, MISP requires Redis. MISP will connect to Redis defined in `REDIS_HO
 
 ### Email setting
 
-* `SMTP_HOST` (optional, string) - SMTP server that will be used for sending emails. SMTP server must support STARTTLS.
-* `SMTP_PORT` (optional, int, default `25`) - the TCP port for the SMTP host. Must support STARTTLS.
+* `SMTP_HOST` (optional, string) - SMTP server that will be used for sending emails.
+* `SMTP_PORT` (optional, int, default `25`) - the TCP port for the SMTP host.
 * `SMTP_USERNAME` (optional, string)
 * `SMTP_PASSWORD` (optional, string)
+* `SMTP_USE_TLS` (optional, boolean, default `true`) - Use TLS when connecting to the SMTP server (the server must support STARTTLS).
 * `MISP_EMAIL` (required, string) - the email address that MISP should use for all notifications
 * `MISP_EMAIL_REPLY_TO` (optional, string) - the email address that will be used in `Reply-To` header
 * `MISP_DEFAULT_PUBLISH_ALERT` (optional, bool, default `false`) - if sending event alert emails should be enabled by default to newly created users
